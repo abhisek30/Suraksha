@@ -10,4 +10,14 @@
         android:name="com.asity.tech.suraksha.PermissionFragment"
         android:label="fragment_permission"
         tools:layout="@layout/fragment_permission" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.asity.tech.suraksha.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.asity.tech.suraksha.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
 </navigation>
