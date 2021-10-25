@@ -1,11 +1,10 @@
 package com.asity.tech.suraksha
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.asity.tech.suraksha.databinding.ActivityMainBinding
 
@@ -22,7 +21,14 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = binding.bottomNavigationView
         val navController = findNavController(R.id.navHostFragment)
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment,R.id.mapsFragment,R.id.notificationFragment,R.id.accountsFragment))
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment,
+                R.id.mapsFragment,
+                R.id.notificationFragment,
+                R.id.accountsFragment
+            )
+        )
         //setupActionBarWithNavController(navHostFragment,appBarConfiguration)
         //setupActionBarWithNavController(navController)
 
@@ -31,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if(destination.id == R.id.permissionFragment) {
+            if (destination.id == R.id.permissionFragment) {
 
                 bottomNavigationView.visibility = View.GONE
                 binding.appBarLayout.visibility = View.GONE

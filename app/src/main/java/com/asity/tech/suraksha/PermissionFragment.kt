@@ -1,10 +1,10 @@
 package com.asity.tech.suraksha
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.asity.tech.suraksha.databinding.FragmentPermissionBinding
 import com.bumptech.glide.Glide
@@ -26,9 +26,10 @@ class PermissionFragment : Fragment() {
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
         binding.userImg.let {
-            Glide.with(this).load(currentUser?.photoUrl).apply(RequestOptions().override(300, 300)).into(
-                it
-            )
+            Glide.with(this).load(currentUser?.photoUrl).apply(RequestOptions().override(300, 300))
+                .into(
+                    it
+                )
         }
 
         binding.continueBtn.setOnClickListener {
@@ -37,6 +38,7 @@ class PermissionFragment : Fragment() {
 
         return view
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

@@ -4,15 +4,17 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
 import android.util.Log
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.text.*
+import androidx.core.text.bold
+import androidx.core.text.color
+import androidx.core.text.inSpans
 import com.asity.tech.suraksha.databinding.ActivitySignInBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -23,12 +25,14 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
+
     companion object {
         private const val RC_SIGN_IN = 120
     }
 
     private lateinit var mAuth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+
     @SuppressLint("ResourceAsColor")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,7 +69,10 @@ class SignInActivity : AppCompatActivity() {
         val facebookTxtLen = facebookTxt.length
 
         facebookTxt.setSpan(
-            CustomTypefaceSpan("", ResourcesCompat.getFont(applicationContext, R.font.klavika_bold)!!),
+            CustomTypefaceSpan(
+                "",
+                ResourcesCompat.getFont(applicationContext, R.font.klavika_bold)!!
+            ),
             0,
             facebookTxtLen,
             0
@@ -86,7 +93,7 @@ class SignInActivity : AppCompatActivity() {
         if (requestCode == RC_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             val exception = task.exception
-            if(task.isSuccessful){
+            if (task.isSuccessful) {
                 try {
                     // Google Sign In was successful, authenticate with Firebase
                     val account = task.getResult(ApiException::class.java)!!
@@ -96,7 +103,7 @@ class SignInActivity : AppCompatActivity() {
                     // Google Sign In failed, update UI appropriately
                     Log.w("SignInActivity", "Google sign in failed", e)
                 }
-            } else{
+            } else {
                 Log.w("SignInActivity", exception.toString())
             }
         }
@@ -110,7 +117,7 @@ class SignInActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("SignInActivity", "signInWithCredential:success")
                     //val user = mAuth.currentUser
-                    val intent = Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
 
@@ -120,6 +127,10 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
     }
-    inline fun SpannableStringBuilder.font(typeface: Typeface? = null, builderAction: SpannableStringBuilder.() -> Unit) =
+
+    inline fun SpannableStringBuilder.font(
+        typeface: Typeface? = null,
+        builderAction: SpannableStringBuilder.() -> Unit
+    ) =
         inSpans(StyleSpan(typeface?.style ?: Typeface.DEFAULT.style), builderAction = builderAction)
 }

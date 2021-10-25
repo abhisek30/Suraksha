@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/circle.xml" value="0.33" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_bottom_nav.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_bottom_sheet_bg.xml" value="0.3651041666666667" />
@@ -10,19 +11,32 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_bottomsheet_input_bg.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_character.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_custom_rating_bar.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_developers_icon.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_facebook.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_facebook_img.xml" value="0.3594871794871795" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_google_img.xml" value="0.3594871794871795" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_home_fill_icon.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_home_icon.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_home_icon_selector.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_home_selector.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_icon_selector.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3594871794871795" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_notification_fill_icon.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_notification_icon.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_notification_selector.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_permission_bg.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_profile_fill_icon.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_profile_icon.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_profile_selector.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_rating_star.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_rating_star_fill.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_recycler_view_star.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_recyclerview_bg.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_search_fill_icon.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_search_icon.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_search_selector.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_sign_in_button.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_suraksha_img.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/ic_user.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/drawable/user_img.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/font/product_sans_bold.xml" value="0.37916666666666665" />
@@ -39,8 +53,9 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/fragment_feedback.xml" value="0.2326388888888889" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/fragment_home.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/fragment_maps.xml" value="0.25905797101449274" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/fragment_notification.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/fragment_permission.xml" value="0.33" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/home_item.xml" value="0.5" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/layout/home_item.xml" value="0.24196597353497165" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/suraksha/app/src/main/res/menu/bottom_menu.xml" value="0.3489583333333333" />
       </map>
     </option>
