@@ -6,10 +6,15 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#020202</color>
+    <color name="app_black">#000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="app_primary">#1E90FF</color>
     <color name="g">#4285F4</color>
     <color name="e">#EA4335</color>
     <color name="o">#FBBC05</color>
     <color name="l">#34A853</color>
+    <color name="facebook">#3B5997</color>
+    <color name="recycler_view_bg">#D2D2D2</color>
+    <color name="star_color">#FFA800</color>
 </resources>

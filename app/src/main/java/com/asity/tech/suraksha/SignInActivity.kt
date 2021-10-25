@@ -1,14 +1,18 @@
 package com.asity.tech.suraksha
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Typeface
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableString
 import android.text.SpannableStringBuilder
+import android.text.style.StyleSpan
 import android.util.Log
-import androidx.core.text.backgroundColor
-import androidx.core.text.bold
-import androidx.core.text.color
-import androidx.core.text.scale
+import androidx.annotation.RequiresApi
+import androidx.core.content.res.ResourcesCompat
+import androidx.core.text.*
 import com.asity.tech.suraksha.databinding.ActivitySignInBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -25,6 +29,8 @@ class SignInActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+    @SuppressLint("ResourceAsColor")
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignInBinding.inflate(layoutInflater)
@@ -39,12 +45,12 @@ class SignInActivity : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
         mAuth = FirebaseAuth.getInstance()
 
-        binding.signInButton.setOnClickListener {
+        binding.signInButtonGoogle?.setOnClickListener {
             signIn()
         }
 
         val signInWithGoogle = SpannableStringBuilder()
-            .append("Sign In With ")
+            .append("Sign up with ")
             .color(resources.getColor(R.color.g)) { bold { append("G") } }
             .color(resources.getColor(R.color.e)) { bold { append("o") } }
             .color(resources.getColor(R.color.o)) { bold { append("o") } }
@@ -52,7 +58,20 @@ class SignInActivity : AppCompatActivity() {
             .color(resources.getColor(R.color.l)) { bold { append("l") } }
             .color(resources.getColor(R.color.e)) { bold { append("e") } }
 
-        binding.signInButton.text = signInWithGoogle
+        binding.signInButtonGoogle?.text = signInWithGoogle
+
+
+        val facebookTxt = SpannableString(" facebook")
+        val facebookTxtLen = facebookTxt.length
+
+        facebookTxt.setSpan(
+            CustomTypefaceSpan("", ResourcesCompat.getFont(applicationContext, R.font.klavika_bold)!!),
+            0,
+            facebookTxtLen,
+            0
+        )
+
+        binding.signInButtonFacebook?.append(facebookTxt)
     }
 
     private fun signIn() {
@@ -101,4 +120,6 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
     }
+    inline fun SpannableStringBuilder.font(typeface: Typeface? = null, builderAction: SpannableStringBuilder.() -> Unit) =
+        inSpans(StyleSpan(typeface?.style ?: Typeface.DEFAULT.style), builderAction = builderAction)
 }

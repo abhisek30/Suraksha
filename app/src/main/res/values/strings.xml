@@ -7,4 +7,11 @@
     <string name="continue_txt">Continue</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nisl convallis rhoncus ultricies. Quam facilisis libero est purus sapien ultrices. Hendrerit vel tincidunt cum cras arcu pellentesque vitae.</string>
     <string name="permission_required">Permission required</string>
+    <string name="make_yourself_self">Make yourself Safe</string>
+    <string name="submit">Submit</string>
+    <string name="type_here_your_concern">Type Here your concern</string>
+    <string name="comments">Comments</string>
+    <string name="rate_the_location">Rate the Location</string>
+    <string name="adjust_the_radius">Adjust the radius</string>
+    <string name="please_give_your_valueable_feedback">Please give your valueable feedback</string>
 </resources>
