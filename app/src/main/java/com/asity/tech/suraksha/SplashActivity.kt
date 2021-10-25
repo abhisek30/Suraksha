@@ -1,9 +1,9 @@
 package com.asity.tech.suraksha
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SplashActivity : AppCompatActivity() {
@@ -16,11 +16,11 @@ class SplashActivity : AppCompatActivity() {
         val user = mAuth.currentUser
 
         Handler().postDelayed({
-            if(user != null){
+            if (user != null) {
                 val mainActivityIntent = Intent(this, MainActivity::class.java)
                 startActivity(mainActivityIntent)
                 finish()
-            }else{
+            } else {
                 val signInIntent = Intent(this, SignInActivity::class.java)
                 startActivity(signInIntent)
                 finish()

@@ -63,12 +63,12 @@
             android:background="@drawable/ic_sign_in_button"
             android:fontFamily="@font/product_sans_regular"
             android:letterSpacing="0"
+            android:stateListAnimator="@null"
             android:text="@string/continue_txt"
             android:textAllCaps="false"
             android:textColor="@color/app_primary"
             android:textSize="18sp"
             app:backgroundTint="@color/white"
-            android:stateListAnimator="@null"
             app:layout_constraintBottom_toBottomOf="@id/constraint_div"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -109,25 +109,25 @@
     <androidx.cardview.widget.CardView
         android:layout_width="80dp"
         android:layout_height="80dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="250dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:cardBackgroundColor="@color/white">
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="75dp"
             android:layout_height="75dp"
-            app:cardCornerRadius="250dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
 
             <ImageView
                 android:id="@+id/user_img"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/ic_user"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user" />
 
         </androidx.cardview.widget.CardView>
 
